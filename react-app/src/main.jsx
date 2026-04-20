@@ -4,11 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import Counter from './Counter.jsx'
 import Toggler from './Toggler.jsx'
+import CounterMessage from './CounterMessage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     <Counter />
     <Toggler/>
+    <CounterMessage/>
   </StrictMode>,
 )
