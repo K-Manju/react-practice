@@ -1,27 +1,23 @@
-import { useState } from "react"
+import React, { useState } from 'react'
 
-const Card = ({title}) => {
+const Show = () =>{
 
-  const[hasLiked, setHasLiked] = useState(false);
+  const [show, SetShow]=useState(false);
 
-  return (
-    <div className="card">
-      <h2>{title}</h2>
-      <button onClick={() => setHasLiked(!hasLiked)}>{hasLiked ? '❤️' : '🤍'}
-      </button>
+  return(
+    <div>
+      <button onClick={() => SetShow(!show)}>{show ? "Hide Text" : "Show Text"}</button>
+
+      {show && <h2>Hello</h2>}
     </div>
   )
 }
 
-const App = () => { 
-
+const App = () => {
   return (
-    <div className="card-container">
-      <Card title="Star Wars" />
-      <Card title="Avatar" />
-      <Card title="Titanic" />
+    <div>
+       <Show/>
     </div>
-
   )
 }
 
