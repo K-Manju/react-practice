@@ -10,8 +10,8 @@ const CounterMessage = () => {
       <button onClick={()=>setCount(count+1)}>Increase</button>
 
 
-      hello
-      
+      hellohrllo
+
       <button onClick={()=>setCount(0)}>Reset</button>
     </div>
   )
